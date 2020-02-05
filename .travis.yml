@@ -3,7 +3,7 @@ services:
 
 before_install:
   - docker pull biothings/biothings-studio:0.2a
-  - docker run --rm --name test_studio -p 8080:8080 -p 7080:7080 -p 8000:8000 -d biothings/biothings-studio
+  - docker run --rm --name test_studio -p 8080:8080 -p 7080:7080 -p 8000:8000 -d biothings/biothings-studio:0.2a
   - docker ps -a
 
 script:
